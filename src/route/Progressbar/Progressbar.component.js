@@ -12,7 +12,7 @@ class Progressbar extends PureComponent {
     const currentStep = this.handleBarSteps()[this.props.checkoutStep];
     return currentStep >= i + 1 ? 'step active container' : 'step container';
   };
-  handleProress = () => {
+  handleProgress = () => {
     const stepsKeys = Object.keys(this.handleBarSteps());
     const currentStep = this.handleBarSteps()[this.props.checkoutStep];
     return (currentStep / stepsKeys.length) * 100;
@@ -22,13 +22,16 @@ class Progressbar extends PureComponent {
     return (
       <div id="progress">
         <div
-          style={{ width: `${this.handleProress()}%` }}
+          style={{ width: `${this.handleProgress()}%` }}
           id="progress-bar"
         ></div>
-        <div id="progress-num">
+        <div
+          id="progress-num"
+          style={{ padding: `0 ${(stepKeys.length - 1) * 10}rem` }}
+        >
           {stepKeys.slice(0, -1).map((s, i) => {
             return (
-              <div className="container">
+              <div key={s} className="container">
                 <span key={s} className={this.handleStyles(i)}>
                   {this.handleBarSteps()[checkoutStep] <= i + 1 ? i + 1 : '✓'}
                 </span>

@@ -4,11 +4,6 @@ import ContentWrapper from 'SourceComponent/ContentWrapper';
 
 class Checkout extends SourceCheckout {
   render() {
-    console.log(
-      '🚀 ~ file: Checkout.component.js ~ line 31 ~ Checkout ~ render ~ checkoutStep',
-      this.props.checkoutStep
-    );
-
     return (
       <main block="Checkout">
         <Progressbar
