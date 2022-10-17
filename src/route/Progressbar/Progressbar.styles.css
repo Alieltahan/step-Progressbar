@@ -25,7 +25,7 @@
 }
 
 #progress-num .step {
-  border: 3px solid lightgray;
+  border: 3px solid var(--breadcrumbs-background);
   background-color: lightgray;
   opacity: 0.3;
   border-radius: 100%;
