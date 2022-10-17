@@ -1,10 +1,10 @@
 #progress {
-  position: absolute;
+  position: relative;
   width: 100%;
   margin: 2rem;
   margin-bottom: 30px;
   padding: 0 5rem;
-  top: -1rem;
+  top: -9rem;
 }
 #progress-bar {
   position: absolute;

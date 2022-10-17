@@ -1,6 +1,7 @@
 import Progressbar from '../Progressbar/Progressbar.component';
 import { Checkout as SourceCheckout } from 'SourceRoute/Checkout/Checkout.component';
 import ContentWrapper from 'SourceComponent/ContentWrapper';
+import './Checkout.styles.extension.css';
 
 class Checkout extends SourceCheckout {
   render() {
